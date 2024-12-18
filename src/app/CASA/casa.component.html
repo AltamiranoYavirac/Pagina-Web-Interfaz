@@ -1,0 +1,36 @@
+<div class="Bienvenidos">
+  <h1>Bienvenido</h1>
+</div>
+
+<body>
+
+    <header class="cabeza">
+      <h2 class="presentacion">Nosotros</h2>
+      <p>Pagina dedicada a la informar a la gente sobre las ultimas tecnologías que existen y van a existir en este mundo, actualizados y pendientes de toda la información,
+        y así estár a la vanguardia para que la gente se mantenga actualizada e informada.
+      </p>
+    </header>
+<!-- Añadir Font Awesome para iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="button-container" *ngIf="showButtons">
+      <button routerLink="/Deber1">
+        <i class="pi pi-book"></i> Matrices
+      </button>
+      <button routerLink="/Deber2">
+        <i class="pi pi-pencil"></i> Responsivo
+      </button>
+      <button routerLink="/Deber3">
+        <i class="pi pi-calendar"></i> Cards
+      </button>
+      <button routerLink="/Deber4">
+        <i class="pi pi-chart-bar"></i> Formulario
+      </button>
+      <button routerLink="/Deber5">
+        <i class="pi pi-globe"></i> Carrusel y Galería
+      </button>
+    </div>
+</body>
+
+
+  <router-outlet></router-outlet>
